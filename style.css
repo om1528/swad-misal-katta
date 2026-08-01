@@ -1089,3 +1089,76 @@ footer {
     gap: 15px;
     flex-wrap: wrap;
 }
+/* ===== Special Offers ===== */
+
+.offers{
+    padding:90px 10%;
+    background:linear-gradient(135deg,#fff8e7,#fff3d6);
+    text-align:center;
+}
+
+.offer-container{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+    margin-top:50px;
+}
+
+.offer-card{
+    position:relative;
+    width:330px;
+    padding:35px 25px;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    transition:.4s;
+    border:3px solid #D4AF37;
+}
+
+.offer-card:hover{
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+
+.offer-badge{
+    position:absolute;
+    top:15px;
+    right:-35px;
+    background:#e63946;
+    color:#fff;
+    padding:8px 40px;
+    transform:rotate(45deg);
+    font-size:14px;
+    font-weight:bold;
+}
+
+.offer-card h3{
+    font-size:28px;
+    color:#b22222;
+    margin-top:25px;
+    margin-bottom:15px;
+}
+
+.offer-card p{
+    font-size:17px;
+    color:#444;
+    line-height:1.6;
+}
+
+.offer-card small{
+    display:block;
+    margin-top:15px;
+    color:#777;
+}
+
+.offer-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:6px;
+    background:linear-gradient(to right,#ff9800,#ff5722);
+}
